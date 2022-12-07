@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-12-05 15:43:54.030677",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "duration",
+  "price",
+  "description"
+ ],
+ "fields": [
+  {
+   "default": "1 Month",
+   "fieldname": "duration",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Duration",
+   "options": "1 Month\n3 Months\n6 Months\n9 Months\n1 Year\n2 Years\n3 Years\n5 Years\nMore than 5 Years"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Price"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-12-05 15:47:13.804372",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Gym Trainer Rate Chart",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

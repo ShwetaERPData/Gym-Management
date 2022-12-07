@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{class}-{booked_by}-{book_date}",
+ "creation": "2022-12-07 10:34:04.060750",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "class",
+  "book_date",
+  "close_date",
+  "booked_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "class",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Class",
+   "options": "Gym Extra Class",
+   "reqd": 1
+  },
+  {
+   "fieldname": "book_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Book Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "close_date",
+   "fieldtype": "Date",
+   "label": "Close Date"
+  },
+  {
+   "fieldname": "booked_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Booked By",
+   "options": "Gym Member",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-12-07 10:34:46.055006",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Book Extra Classes",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

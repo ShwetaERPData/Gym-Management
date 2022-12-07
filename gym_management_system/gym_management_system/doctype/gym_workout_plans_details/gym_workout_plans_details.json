@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{work_out_name}-{level}-{gender}",
+ "creation": "2022-12-05 15:59:33.779637",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "work_out_name",
+  "level",
+  "gender",
+  "column_break_4",
+  "price",
+  "duration",
+  "is_active",
+  "section_break_8",
+  "workout_plan",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "work_out_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Work Out Name",
+   "reqd": 1
+  },
+  {
+   "default": "Beginner",
+   "fieldname": "level",
+   "fieldtype": "Select",
+   "label": "Level",
+   "options": "Beginner\nIntermediate\nAdvanced",
+   "reqd": 1
+  },
+  {
+   "default": "Male",
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "Price"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Select",
+   "label": "Duration",
+   "options": "1 Month\n3 Month\n6 Month\n9 Months\n1 Year\n2 Years\n3 Years\n5 Years\nMore than 5 Years"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "workout_plan",
+   "fieldtype": "Table",
+   "label": "Workout Plan",
+   "options": "Gym Workout Plan Exercise",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-12-05 16:08:39.893792",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Gym Workout Plans Details",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

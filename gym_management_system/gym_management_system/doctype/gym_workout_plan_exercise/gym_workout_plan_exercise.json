@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-12-02 17:22:15.076373",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "workout_type",
+  "count",
+  "duration"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "workout_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Workout Type",
+   "options": "Gym workout Activities",
+   "reqd": 1
+  },
+  {
+   "fieldname": "count",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Count"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Duration",
+   "in_list_view": 1,
+   "label": "Duration"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-12-05 15:57:32.157136",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Gym Workout Plan Exercise",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
