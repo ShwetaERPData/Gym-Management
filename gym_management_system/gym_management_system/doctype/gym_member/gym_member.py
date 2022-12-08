@@ -13,4 +13,15 @@ class GymMember(Document):
 			"doctype":"User",
 			"email":self.email,
 			"first_name":self.first_name,
+			"last_name":self.last_name,
+			"full_name":self.full_name,
+			"birth_date":self.dob,
+			"mobile_no":self.phone,
+			"role_profile_name":"Gym member",
+			"module_profile":"Gym Member Profile",
 		}).insert(ignore_permissions=True)
+		
+	def before_save(self):
+		self.full_name = f'{self.first_name} {self.last_name}'
+
+	

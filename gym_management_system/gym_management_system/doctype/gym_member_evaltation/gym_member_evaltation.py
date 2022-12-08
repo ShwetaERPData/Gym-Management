@@ -24,6 +24,7 @@ def mark_gym_evtuation(data):
 			"member":data['member'],
 			"month":data['month'],
 			"weight": data['weight'],
+			"year": data['year'],
 			"calories":data['calories'],
 		    "is_improvement": data['is_improvement'],
 		}

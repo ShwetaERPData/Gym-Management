@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{member}-{month}",
+ "autoname": "format:{member}-{month}-{year}",
  "creation": "2022-12-05 18:08:46.230319",
  "default_view": "List",
  "doctype": "DocType",
@@ -10,6 +10,7 @@
  "field_order": [
   "member",
   "month",
+  "year",
   "weight",
   "is_improvement",
   "calories"
@@ -46,11 +47,18 @@
    "fieldtype": "Data",
    "label": "Calories",
    "reqd": 1
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Select",
+   "label": "Year",
+   "options": "2022\n2023\n2024\n2025\n2026\n2027\n2028\n2029\n2030",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-12-06 18:08:38.768069",
+ "modified": "2022-12-08 12:12:22.657344",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Member Evaltation",

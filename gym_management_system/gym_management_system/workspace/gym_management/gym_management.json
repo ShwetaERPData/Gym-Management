@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Gym Management</span>\",\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Book Locker\",\"col\":4}}]",
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Gym Management Admin</span>\",\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Book Locker\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Masters\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Gym Trainer Activities\",\"col\":4}}]",
  "creation": "2022-12-06 15:38:56.326677",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -31,16 +31,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Book Locker",
-   "link_count": 0,
-   "link_to": "Book Locker",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Book Class",
    "link_count": 0,
    "link_to": "Book Extra Classes",
@@ -61,15 +51,131 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Book Gym Plans",
+   "label": "Book MemberShip Plan",
    "link_count": 0,
    "link_to": "Book Membership Plans",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Book Locker",
+   "link_count": 0,
+   "link_to": "Book Locker",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Masters",
+   "link_count": 5,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gym Member",
+   "link_count": 0,
+   "link_to": "Gym Member",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gym Setting",
+   "link_count": 0,
+   "link_to": "Gym Setting",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gym Locker",
+   "link_count": 0,
+   "link_to": "Gym Locker",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gym Trainer",
+   "link_count": 0,
+   "link_to": "Gym Trainers",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gym Class",
+   "link_count": 0,
+   "link_to": "Gym Extra Class",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gym Workout Plans",
+   "link_count": 0,
+   "link_to": "Gym Workout Plans Details",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gym Trainer Activities",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gym Workout Plan Details",
+   "link_count": 0,
+   "link_to": "Gym Workout Plans Details",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gym workout Activities",
+   "link_count": 0,
+   "link_to": "Gym workout Activities",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gym Member Evaluation",
+   "link_count": 0,
+   "link_to": "Gym Member Evaltation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2022-12-07 10:42:27.118526",
+ "modified": "2022-12-08 15:57:22.985884",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Management",
@@ -77,7 +183,11 @@
  "parent_page": "",
  "public": 1,
  "quick_lists": [],
- "roles": [],
+ "roles": [
+  {
+   "role": "Gym Admin"
+  }
+ ],
  "sequence_id": 39.0,
  "shortcuts": [],
  "title": "Gym Management"

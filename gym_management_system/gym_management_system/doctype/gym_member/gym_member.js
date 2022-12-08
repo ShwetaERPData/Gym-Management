@@ -30,10 +30,21 @@ frappe.ui.form.on('Gym Member', {
 			   },
 			   "Actions"
 		   );
+		   frm.add_custom_button(
+			"Go to Permission",
+			() => {
+				frappe.new_doc("User Permission",{
+					user:frm.doc.name,
+				 })
+			},
+			"Give Permission"
+		);
 		   let me = this;
 		const months = moment.months();
 		const curMonth = moment().format("MMMM");
 		months.splice(months.indexOf(curMonth) + 1);
+		const curYear = moment().format("YYYY");
+		
 			frm.add_custom_button(
 				"Mark Evalution",
 				() =>{
@@ -56,6 +67,14 @@ frappe.ui.form.on('Gym Member', {
 								options: months,
 								reqd: 1,
 								default: curMonth
+							},
+							{
+								label: __("For Year"),
+								fieldtype: "Select",
+								fieldname: "year",
+								options: [2022,2023,2024,2025,2026,2027,2028,2029,2030],
+								reqd: 1,
+								default: curYear
 							},
 							{
 								"fieldname":"weight",
@@ -91,7 +110,7 @@ frappe.ui.form.on('Gym Member', {
 										callback: function (r) {
 											if (r.message === 1) {
 												frappe.show_alert({
-													message: __("Attendance Marked"),
+													message: __("Marked Evaluations"),
 													indicator: 'blue'
 												});
 												cur_dialog.hide();
