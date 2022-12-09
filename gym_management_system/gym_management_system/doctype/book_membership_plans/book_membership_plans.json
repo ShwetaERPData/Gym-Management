@@ -11,7 +11,11 @@
   "class",
   "book_date",
   "close_date",
-  "booked_by"
+  "booked_by",
+  "column_break_5",
+  "duration",
+  "plan_details",
+  "plan_price"
  ],
  "fields": [
   {
@@ -40,11 +44,36 @@
    "fieldtype": "Link",
    "label": "Booked By",
    "options": "Gym Member"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "class.description",
+   "fieldname": "plan_details",
+   "fieldtype": "Small Text",
+   "label": "Plan Details",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "class.duration",
+   "fieldname": "duration",
+   "fieldtype": "Data",
+   "label": "Duration",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "class.price",
+   "fieldname": "plan_price",
+   "fieldtype": "Data",
+   "label": "Plan Price",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-12-09 16:19:09.401312",
+ "modified": "2022-12-09 17:21:23.592115",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Book Membership Plans",

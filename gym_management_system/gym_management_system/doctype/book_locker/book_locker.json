@@ -11,7 +11,9 @@
   "available_lockers",
   "start_date",
   "end_date",
-  "booked_by"
+  "booked_by",
+  "column_break_5",
+  "locker_available"
  ],
  "fields": [
   {
@@ -35,11 +37,21 @@
    "fieldname": "end_date",
    "fieldtype": "Date",
    "label": "End Date"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "available_lockers.is_available",
+   "fieldname": "locker_available",
+   "fieldtype": "Data",
+   "label": "Locker Available"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-12-09 16:32:49.916359",
+ "modified": "2022-12-09 17:08:13.380825",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Book Locker",

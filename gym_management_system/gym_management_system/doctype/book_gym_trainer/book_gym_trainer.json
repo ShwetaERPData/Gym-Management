@@ -11,7 +11,10 @@
   "trainer",
   "book_date",
   "close_date",
-  "booked_by"
+  "booked_by",
+  "column_break_5",
+  "trainer_details",
+  "trainer_expirience"
  ],
  "fields": [
   {
@@ -41,11 +44,27 @@
    "fieldtype": "Link",
    "label": "Booked By",
    "options": "Gym Member"
+  },
+  {
+   "fetch_from": "trainer.description",
+   "fieldname": "trainer_details",
+   "fieldtype": "Data",
+   "label": "Trainer Details"
+  },
+  {
+   "fetch_from": "trainer.experience",
+   "fieldname": "trainer_expirience",
+   "fieldtype": "Data",
+   "label": "Trainer Expirience"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-12-07 14:39:00.161346",
+ "modified": "2022-12-09 17:16:59.932056",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Book Gym Trainer",

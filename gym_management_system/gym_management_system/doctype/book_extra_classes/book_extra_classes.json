@@ -11,7 +11,10 @@
   "class",
   "book_date",
   "close_date",
-  "booked_by"
+  "booked_by",
+  "column_break_5",
+  "class_fees",
+  "html_6"
  ],
  "fields": [
   {
@@ -41,11 +44,29 @@
    "label": "Booked By",
    "options": "Gym Member",
    "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "class.description",
+   "fieldname": "html_6",
+   "fieldtype": "Small Text",
+   "label": "class Detail",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "class.price",
+   "fieldname": "class_fees",
+   "fieldtype": "Data",
+   "label": "Class Fees",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-12-09 11:39:04.243089",
+ "modified": "2022-12-09 17:13:28.792648",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Book Extra Classes",
