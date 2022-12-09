@@ -2,7 +2,13 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Book Locker', {
-	// refresh: function(frm) {
-
-	// }
+	 refresh: function(frm) {
+		frm.fields_dict['available_lockers'].get_query = function(doc) {
+			return {
+				filters: {
+					"is_available": '1'
+				}
+			}
+		}
+	}
 });

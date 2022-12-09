@@ -14,7 +14,8 @@
   "active",
   "is_available",
   "section_break_6",
-  "description"
+  "description",
+  "data"
  ],
  "fields": [
   {
@@ -55,11 +56,16 @@
    "fieldname": "description",
    "fieldtype": "Small Text",
    "label": "Description"
+  },
+  {
+   "fieldname": "data",
+   "fieldtype": "HTML",
+   "label": "Data"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-12-05 15:35:37.067120",
+ "modified": "2022-12-08 21:49:54.653581",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Extra Class",
