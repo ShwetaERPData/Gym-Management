@@ -9,10 +9,9 @@
  "engine": "InnoDB",
  "field_order": [
   "available_lockers",
-  "booked_by",
-  "column_break_3",
   "start_date",
-  "end_date"
+  "end_date",
+  "booked_by"
  ],
  "fields": [
   {
@@ -28,10 +27,6 @@
    "options": "Gym Member"
   },
   {
-   "fieldname": "column_break_3",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "start_date",
    "fieldtype": "Date",
    "label": "Start Date"
@@ -44,7 +39,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-12-07 13:22:32.569140",
+ "modified": "2022-12-09 16:32:49.916359",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Book Locker",

@@ -19,7 +19,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Plans",
-   "options": "Gym Workout Plans Details",
+   "options": "Gym Workout Plan Description",
    "reqd": 1
   },
   {
@@ -44,7 +44,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-12-07 11:51:39.703203",
+ "modified": "2022-12-09 16:19:09.401312",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Book Membership Plans",

@@ -1,8 +1,9 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "autoname": "format:{work_out_name}-{level}-{gender}",
- "creation": "2022-12-05 15:59:33.779637",
+ "creation": "2022-12-09 16:10:57.024716",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -11,11 +12,13 @@
   "work_out_name",
   "level",
   "gender",
-  "column_break_4",
   "price",
+  "column_break_5",
   "duration",
+  "route",
+  "is_published",
   "is_active",
-  "section_break_8",
+  "section_break_10",
   "workout_plan",
   "description"
  ],
@@ -23,34 +26,38 @@
   {
    "fieldname": "work_out_name",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Work Out Name",
-   "reqd": 1
+   "label": "Work Out Name"
   },
   {
-   "default": "Beginner",
    "fieldname": "level",
    "fieldtype": "Select",
    "label": "Level",
-   "options": "Beginner\nIntermediate\nAdvanced",
-   "reqd": 1
+   "options": "Beginner\nIntermediate\nAdvanced"
   },
   {
-   "default": "Male",
    "fieldname": "gender",
-   "fieldtype": "Select",
-   "label": "Gender",
-   "options": "Male\nFemale",
-   "reqd": 1
+   "fieldtype": "Data",
+   "label": "Gender"
   },
   {
-   "fieldname": "column_break_4",
-   "fieldtype": "Column Break"
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published"
   },
   {
    "fieldname": "price",
-   "fieldtype": "Currency",
+   "fieldtype": "Data",
    "label": "Price"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "duration",
@@ -59,34 +66,35 @@
    "options": "1 Month\n3 Month\n6 Month\n9 Months\n1 Year\n2 Years\n3 Years\n5 Years\nMore than 5 Years"
   },
   {
-   "fieldname": "section_break_8",
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "section_break_10",
    "fieldtype": "Section Break"
   },
   {
    "fieldname": "workout_plan",
    "fieldtype": "Table",
    "label": "Workout Plan",
-   "options": "Gym Workout Plan Exercise",
-   "reqd": 1
+   "options": "Gym Workout Plan Exercise"
   },
   {
    "fieldname": "description",
    "fieldtype": "Small Text",
    "label": "Description"
-  },
-  {
-   "default": "1",
-   "fieldname": "is_active",
-   "fieldtype": "Check",
-   "label": "Is Active"
   }
  ],
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
  "links": [],
- "modified": "2022-12-05 16:08:39.893792",
+ "modified": "2022-12-09 16:22:36.507225",
  "modified_by": "Administrator",
  "module": "Gym Management System",
- "name": "Gym Workout Plans Details",
+ "name": "Gym Workout Plan Description",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
@@ -103,6 +111,7 @@
    "write": 1
   }
  ],
+ "route": "gymplan",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
