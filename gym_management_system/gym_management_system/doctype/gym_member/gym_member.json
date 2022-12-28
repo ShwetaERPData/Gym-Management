@@ -12,12 +12,17 @@
   "last_name",
   "full_name",
   "dob",
+  "gender",
   "age",
   "column_break_8",
   "email",
   "phone",
   "photo",
-  "profession"
+  "profession",
+  "section_break_12",
+  "height",
+  "column_break_14",
+  "weight"
  ],
  "fields": [
   {
@@ -59,8 +64,9 @@
   },
   {
    "fieldname": "phone",
-   "fieldtype": "Data",
+   "fieldtype": "Phone",
    "label": "Mobile No",
+   "options": "Phone",
    "reqd": 1
   },
   {
@@ -79,11 +85,36 @@
    "fieldname": "age",
    "fieldtype": "HTML",
    "label": "age"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "label": "Height"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "label": "Weight"
+  },
+  {
+   "description": "(Used For BMI Calculation)",
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-12-08 17:06:43.912227",
+ "modified": "2022-12-27 15:31:18.113453",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Member",

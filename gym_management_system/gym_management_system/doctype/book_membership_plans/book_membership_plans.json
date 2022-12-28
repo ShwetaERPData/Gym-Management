@@ -8,11 +8,12 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "booked_by",
   "class",
   "book_date",
   "close_date",
-  "booked_by",
   "column_break_5",
+  "payment_status",
   "duration",
   "plan_details",
   "plan_price"
@@ -42,7 +43,7 @@
   {
    "fieldname": "booked_by",
    "fieldtype": "Link",
-   "label": "Booked By",
+   "label": "Member",
    "options": "Gym Member"
   },
   {
@@ -69,11 +70,17 @@
    "fieldtype": "Data",
    "label": "Plan Price",
    "read_only": 1
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "Payment Status",
+   "options": "Paid\nPending"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-12-09 17:21:23.592115",
+ "modified": "2022-12-27 15:36:13.522552",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Book Membership Plans",

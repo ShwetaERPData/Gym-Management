@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{member}-{month}-{year}",
+ "autoname": "format:{member}-{date}",
  "creation": "2022-12-05 18:08:46.230319",
  "default_view": "List",
  "doctype": "DocType",
@@ -9,11 +9,16 @@
  "engine": "InnoDB",
  "field_order": [
   "member",
+  "date",
+  "column_break_3",
   "month",
   "year",
+  "measurements_section",
   "weight",
-  "is_improvement",
-  "calories"
+  "heightin_feet",
+  "column_break_9",
+  "calories",
+  "is_improvement"
  ],
  "fields": [
   {
@@ -33,7 +38,7 @@
   {
    "fieldname": "weight",
    "fieldtype": "Float",
-   "label": "Weight",
+   "label": "Weight(in Kg)",
    "reqd": 1
   },
   {
@@ -54,11 +59,34 @@
    "label": "Year",
    "options": "2022\n2023\n2024\n2025\n2026\n2027\n2028\n2029\n2030",
    "reqd": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "measurements_section",
+   "fieldtype": "Section Break",
+   "label": "Measurements"
+  },
+  {
+   "fieldname": "heightin_feet",
+   "fieldtype": "Data",
+   "label": "Height(in feet)"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-12-08 12:12:22.657344",
+ "modified": "2022-12-27 17:13:06.010598",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Member Evaltation",

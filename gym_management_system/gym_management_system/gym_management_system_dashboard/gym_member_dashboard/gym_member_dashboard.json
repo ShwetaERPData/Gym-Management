@@ -1,0 +1,21 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Evaluation",
+   "width": "Full"
+  }
+ ],
+ "creation": "2022-12-27 17:24:53.295828",
+ "dashboard_name": "Gym Member Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2022-12-27 17:24:53.295828",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Gym Member Dashboard",
+ "owner": "Administrator"
+}

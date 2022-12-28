@@ -8,10 +8,10 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "booked_by",
   "class",
   "book_date",
   "close_date",
-  "booked_by",
   "column_break_5",
   "class_fees",
   "html_6"
@@ -41,7 +41,7 @@
    "fieldname": "booked_by",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Booked By",
+   "label": "Member",
    "options": "Gym Member",
    "reqd": 1
   },
@@ -66,7 +66,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-12-09 17:13:28.792648",
+ "modified": "2022-12-27 15:57:03.676874",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Book Extra Classes",
